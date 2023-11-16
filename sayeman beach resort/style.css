@@ -1,0 +1,76 @@
+body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+   
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .logo{
+    width: 110px;
+  margin-left: 600px;
+  margin-top: 50px;
+    align-items: center;
+  }
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+  display: flex;
+  justify-content: center;
+    text-align: end;
+    
+    margin-left: 60px;
+    gap: 100px;
+  }
+  
+  .overlay a {
+    padding: 2px;
+    text-decoration: none;
+    font-size: 20px;
+   justify-content: center;
+    display: block;
+    color: white;
+    transition: 0.3s;
+  }
+  .address{
+    color: white;
+    font-size: 20px;
+    text-align: start;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: rgb(219, 91, 44);
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    color: rgb(255, 255, 255);
+    right: 45px;
+    font-size: 60px;
+  }
+  .hover{
+    transition: 1s;
+  }
+  .hover:hover{
+    transform: scale(1.2);
+    z-index: 1;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+ 
